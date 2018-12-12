@@ -15,7 +15,7 @@
 <div class="content-main">
 
   <ul class="nav nav-tabs">
-    <li><a href="/me"><i class="fa fa-gears"></i> {{ t('User Information') }}</a></li>
+    <li><a href="/me"><i class="fa fa-cogs"></i> {{ t('User Information') }}</a></li>
     <li><a href="/me/password"><i class="fa fa-key"></i> {{ t('Password Setting') }}</a></li>
     <li class="active"><a href="/me/apiToken"><i class="fa fa-rocket"></i> {{ t('API Settings') }}</a></li>
   </ul>
@@ -48,7 +48,7 @@
         <label for="" class="col-xs-3 control-label">{{ t('Current API Token') }}</label>
         <div class="col-xs-6">
           {% if user.apiToken %}
-            <input class="form-control" type="text" value="{{ user.apiToken }}">
+            <input class="form-control" type="text" value="{{ user.apiToken }}" readonly>
           {% else %}
           <p class="form-control-static">
             {{ t('page_me_apitoken.notice.apitoken_issued') }}

@@ -1,4 +1,5 @@
 {
+  "stack": "heroku-16",
   "name": "Crowi",
   "description": "The simple & powerful Wiki",
   "keywords": [
@@ -25,7 +26,7 @@
     {
       "plan": "bonsai",
       "options": {
-        "version": "5.1"
+        "version": "6.2"
       }
     }
   ]

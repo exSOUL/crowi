@@ -36,12 +36,16 @@
       </div>
       {% endif %}
 
-      <form action="/admin/search/build" method="post" class="form-horizontal" id="appSettingForm" role="form">
+      <form action="/admin/search/build" method="post" class="form-horizontal" role="form">
       <fieldset>
         <legend>Index Build</legend>
         <div class="form-group">
           <label for="" class="col-xs-3 control-label">Index Build</label>
           <div class="col-xs-6">
+
+            <div id="admin-rebuild-search">
+            </div>
+
             <button type="submit" class="btn btn-primary">Build Now</button>
             <p class="help-block">
               Force rebuild index.<br>

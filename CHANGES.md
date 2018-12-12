@@ -1,6 +1,69 @@
 CHANGES
 ========
 
+## 1.7.5
+
+- Improve: Not to allow input on API key form (Thank you @is2ei, #379)
+- Improve: Performances of page and list page (#384, #386)
+- Improve: The calculation method of search score (#391)
+- Improve: Search result UI and Build index page for Elasticsearch UX (#391)
+- I18n: Unportalize dialog (#381)
+
+## 1.7.4
+
+- Improve: Add portalize button to menu (#368)
+- Fix: Broken layout on extra small devices (#366)
+- Fix: Can't access files on shared pages if it isn't set secret keyword (#370)
+
+## 1.7.3
+
+- Improve: Search users on `/admin/users` page (#360)
+- Changes: Use only websocket transport (#355)
+- Fix: Disable resize of editor textarea (#358)
+- Fix: Can't rename tree under certain conditions (#362)
+
+## 1.7.2
+
+- Fix error when loading all pages caused by sort option.
+
+## 1.7.0
+
+- Feature: GitHub Authentication (#282)
+- Feature: Rename a page hierarchy (#301)
+- Feature: Share pages externally (#313, #334)
+- Feature: Group search results by page type (#312)
+- Improve: Support pagination on the search api (Thank you @hirakiuc, #293)
+- Improve: Support bearer token (Thank you @hirakiuc, #299)
+- Fix: Can't add page grant correctly with mongodb 3.6 (#326)
+- Updates: Elasticsearch v6 (#336)
+- Updates: FontAwesome v5 (#288)
+- API Changes:
+    - Add `bookmarks.list` (Thank you @hirakiuc, #296)
+- Dev: Introduce Prettier and ESLint instead of JSHint (#297)
+- And some document updates, package updates. Thank you @onsd @inductor.
+
+## 1.6.5
+
+- Fix: Can't add page grant correctly with mongodb 3.6 (#325)
+
+## 1.6.4
+
+- Fix: Can't unportalize in case (#286)
+- Fix: Handle error on search page (#276)
+- Fix: Clear session when failing google login (Thank you @chuganzy, #273)
+- Fix: Error on bulk operation for adding large amout of pages to search (#271)
+- Fix: Specify bonsai version for heroku.
+- Dev: Added docker-compose for development environment.
+
+## 1.6.3
+
+- Fix: Invalid MathJax setting
+- Fix: Check e-mail duplication (#257)
+- Updates: load ENV from `.env`
+- Improve: Use client date (Thanks @suzuki)
+- Improve: Slack module update and add link to post text
+- And some fixes. Thank you @okonomi @tkitsunai.
+
 ## 1.6.2
 
 - Feature: Support PlantUML
